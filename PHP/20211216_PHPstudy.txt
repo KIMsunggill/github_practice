@@ -1,0 +1,20 @@
+xampp를 켜고 phpmyadmin으로 들어간다.
+<사용자 계정> 항목에서
+사용자명: root, 호스트명:localhost를 누르고 change passoword를 눌러 비밀번호를 바꿨다.
+연습이라서 '1234'로 설정했다.
+C:\xampp\phpMyAdmin\config.inc.php
+에 들어가서
+$cfg['Servers'][$i]['password'] = '1234';
+이렇게 설정했다.
+그러자 설정해놓은 비밀번호가 인식됐다.
+그리고나서 mysql_connect.php를 켰다.
+$db = mysqli_connect("localhost", "사용자명", "비밀번호", "데이터베이스 이름");
+이것을 고쳤다.
+그러자 php와 mysql이 연결됐다.
+
+
+21시부터 23시 38분까지
+https://blog.naver.com/PostView.naver?blogId=bgpoilkj&logNo=220751401209&categoryNo=60&parentCategoryNo=&from=thumbnailList
+에서 PHP게시판 만들기를 공부하다가
+한 번은 따라해서 성공했지만, 두 번째로 내 식대로 해봤는데 1시간 내내 해도 실패했다.
+내일 다시 해보자.
