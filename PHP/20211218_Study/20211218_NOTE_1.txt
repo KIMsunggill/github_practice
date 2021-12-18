@@ -14,3 +14,6 @@ PHP의 print_r() 기능
 에 대해서 알았다.
 변수에 저장된 정보를 표시하는 데 사용된다.
 ///
+The first, ->, is used when you want to call a method on an instance or access an instance property.
+The second, ::, is used when you want to call a static method, access a static variable, or call a parent class's version of a method within a child class.
+///
