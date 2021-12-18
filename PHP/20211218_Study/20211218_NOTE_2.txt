@@ -1,0 +1,56 @@
+<?php echo"abc ", "가나다"; ?>// It does work.
+<?php print "abc ", "가나다"; ?>//does not work.
+-------------------------------------------------
+<?php
+$a=["abc", "가나다", "123", "4", "5", "6"];
+print_r($a);
+?>
+
+//Output//
+
+Array
+(
+    [0] => abc
+    [1] => 가나다
+    [2] => 123
+    [3] => 4
+    [4] => 5
+    [5] => 6
+)
+//
+
+echo를 쓰면 안 나옴. print_r을 써야 array가 출력됨.
+-------------------------------------------------
+Display data with var_dump()
+
+An alternative function for dumping variables is var_dump($var).
+This function adds information to the variable and is therefore more suitable for debugging.
+Output to visitors of a page should not be done with this function.
+
+<?php
+    var_dump(123);
+    var_dump(2.525);
+    var_dump("Alex");
+    var_dump(false);
+    var_dump(array('A'=>'Alex', 'B'=>'Bob'));
+    var_dump(null);
+?>
+
+//Output//
+
+int(123)
+float(2.525)
+string(4) "Alex"
+bool(false)
+array(2) {
+  ["A"]=>
+  string(4) "Alex"
+  ["B"]=>
+  string(3) "Bob"
+}
+NULL
+-------------------------------------------------
+위의 내용을 아래의 웹사이트를 보고 배움:
+https://stackhowto.com/how-to-display-php-variable-values-with-echo-print_r-and-var_dump/
+https://www.php.net/manual/en/language.basic-syntax.php
+-------------------------------------------------
