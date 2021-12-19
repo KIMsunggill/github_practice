@@ -86,4 +86,9 @@ sort($fruits);
 echo'<pre>';
 var_dump($fruits);
 echo'</pre>';
+
+rsort($fruits); #역순으로 정렬
+echo'<pre>';
+var_dump($fruits);
+echo'</pre>';
 ?>
