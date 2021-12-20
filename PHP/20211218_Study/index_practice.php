@@ -55,6 +55,7 @@
         </table>
         <div id="write_btn">
             <a href="/KMOVE/page/board/write.php"><button>글쓰기</button></a>
+            <!--버튼의 위치는 style를 쓰면 된다. <button style="margin-right: 800px;">글쓰기</button></a>-->
         </div>
     </div>
 </body>
