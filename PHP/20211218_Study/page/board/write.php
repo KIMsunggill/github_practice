@@ -1,4 +1,3 @@
-<!--출처: https://blog.naver.com/PostList.naver?blogId=bgpoilkj-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,6 +32,7 @@
                 <div id="in_pw">
                     <input type="password" name="pw" id="upw" placeholder="비밀번호" required />
                 </div>
+                <!--id="in_XX"에서 XX에 따라 입력란이 달라진다.-->
                 <div class="bt_se">
                     <button type="submit">글 작성</button>
                 </div>
