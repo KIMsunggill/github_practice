@@ -1,4 +1,3 @@
-<!--출처: https://blog.naver.com/PostList.naver?blogId=bgpoilkj-->
 <?php
 
 include $_SERVER["DOCUMENT_ROOT"]."/KMOVE/db.php";
@@ -11,6 +10,8 @@ $title = $_POST["title"];
 $content = $_POST["content"];
 $date = date("Y-m-d");
 //$date에는 date 메서드를 썼다.
+//$_POST: Super global variables are built-in variables that are always available in all scopes.
+//php에서 다른 php 파일에 POST 방식으로 데이터를 넘기고 받을 때 사용
 
 if($username && $userpw && $title && $content){
     $sql = mq("insert into board(name,pw,title,content,date) values('".$username."','".$userpw."','".$title."','".$content."','".$date."')");
