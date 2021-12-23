@@ -16,7 +16,7 @@ $sql = mq("delete from board where idx='$bno';");
 </script>
 <body onload="load()"></body>
 <!--자바스크립트를 이용한 하이퍼링크-->
-<!--    echo "<script>
+<!--echo "<script>
     print('');
     location.href='/KMOVE1/index_list.php';</script>";
 php에서는 이렇게 하면 알아서 하이퍼링크로 넘어간다.-->
