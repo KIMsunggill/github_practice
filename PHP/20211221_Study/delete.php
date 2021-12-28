@@ -11,7 +11,7 @@ $sql = mq("delete from board where idx='$bno';");
 <!--자바스크립트를 이용한 하이퍼링크-->
 <script type="text/javascript">
     function load() {
-        alert("수정됐습니다.");
+        alert("삭제됐습니다.");
         window.location.href = "/KMOVE/index_practice.php";
     }
 </script>
